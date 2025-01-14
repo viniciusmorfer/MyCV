@@ -1,0 +1,212 @@
+ 
+
+    /* General body styles */
+    body {
+        background-color: #121212; /* Sets the background color to dark */
+        font-family: 'Arial', sans-serif; /* Specifies the font family */
+        color: #fff; /* Sets the default text color to white */
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+        height: 100vh; /* Full-height for the sidebar */
+        background-color: #1e1e1e; /* Dark background for the sidebar */
+        padding: 20px; /* Adds padding around the sidebar content */
+        position: fixed; /* Fixes the sidebar on the left side */
+        width: 250px; /* Sidebar width */
+        overflow-y: auto; /* Allows vertical scrolling if content overflows */
+        text-align: center; /* Centers the text inside the sidebar */
+    }
+
+    /* Styles for the profile picture in the sidebar */
+    .sidebar img {
+        width: 100px; /* Sets the image width */
+        height: 100px; /* Sets the image height */
+        border-radius: 50%; /* Makes the image circular */
+        margin: 0 auto; /* Centers the image horizontally */
+        display: block; /* Displays the image as a block-level element */
+    }
+
+    /* Sidebar heading (name) styles */
+    .sidebar h2 {
+        text-align: center;
+        margin: 20px 0 10px;
+        font-size: 1.5rem;
+    }
+
+    /* Social icons in the sidebar */
+    .sidebar .social-icons {
+        display: flex; /* Flexbox for arranging icons horizontally */
+        justify-content: center; /* Centers the icons */
+        margin: 10px 0;
+    }
+    .sidebar .social-icons a {
+        margin: 0 10px; /* Adds spacing between icons */
+        color: #fff; /* Sets icon color to white */
+        font-size: 1.5rem; /* Increases the size of the icons */
+    }
+
+    /* Sidebar navigation menu */
+    .sidebar nav ul {
+        list-style: none; /* Removes default list styles (e.g., bullets) */
+        padding: 0; /* Removes default padding */
+    }
+    .sidebar nav ul li {
+        margin: 15px 0; /* Adds spacing between menu items */
+        display: flex; /* Flexbox for aligning menu items */
+        align-items: center;
+    }
+    .sidebar nav ul li a {
+        color: #fff; /* Menu link color */
+        text-decoration: none; /* Removes underline from links */
+        font-size: 1.2rem; /* Increases link font size */
+        display: flex; /* Flexbox for menu links */
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .sidebar nav ul li a i {
+        margin-right: 10px; /* Adds spacing between icons and text */
+    }
+
+    /* Main content area styles */
+    .main {
+        margin-left: 270px; /* Creates space for the sidebar */
+        padding: 20px; /* Adds padding to the content */
+    }
+
+    /* Hero section styles (e.g., banner) */
+    .hero {
+        display: flex; /* Flexbox for centering content */
+        align-items: center;
+        justify-content: center;
+        background: url('freelance.png') no-repeat center center/cover;
+        height: 300px; /* Sets the height of the hero section */
+        margin-bottom: 20px;
+    }
+    .hero h1 {
+        color: #fff; /* White text for the heading */
+        font-size: 3rem; /* Large font size */
+    }
+    .hero p {
+        color: #ddd; /* Lighter shade of text color */
+        font-size: 1.5rem; /* Slightly smaller font size */
+    }
+
+    /* Section styles */
+    section {
+        padding: 50px 0; /* Adds vertical padding */
+    }
+    section h2 {
+        font-size: 2rem; /* Sets section heading font size */
+        margin-bottom: 20px; /* Adds space below the heading */
+    }
+
+    /* Resume section styles */
+    .resume-section {
+        display: flex; /* Flexbox for arranging content */
+        flex-wrap: wrap; /* Allows wrapping if content overflows */
+        justify-content: space-between; /* Distributes columns evenly */
+    }
+    .resume-section .column {
+        flex: 0 0 48%; /* Columns take 48% of the width */
+    }
+    .resume-section .column h4 {
+        margin-top: 20px;
+        color: #3949ab; /* Sets a blue color for headings */
+    }
+
+    /* Timeline styles in resume */
+    .resume-section .timeline {
+        position: relative;
+    }
+    .resume-section .timeline::before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: #3949ab; /* Blue vertical line */
+    }
+    .resume-section .timeline-entry {
+        margin-left: 40px; /* Adds spacing to the left */
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .resume-section .timeline-entry::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -30px;
+        width: 20px;
+        height: 20px;
+        background: #3949ab; /* Blue circle */
+        border-radius: 50%; /* Makes the circle round */
+    }
+
+    /* Contact section styles */
+    .contact-section {
+        display: flex; /* Flexbox layout */
+        flex-wrap: wrap; /* Allows wrapping of content */
+        gap: 20px; /* Adds spacing between elements */
+    }
+    .contact-info {
+        flex: 1; /* Equalizes the width of contact info */
+        min-width: 300px;
+    }
+    .contact-info ul {
+        list-style: none; /* Removes list styles */
+        padding: 0; /* Removes padding */
+    }
+    .contact-info ul li {
+        display: flex; /* Flexbox for aligning items */
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .contact-info ul li i {
+        font-size: 1.8rem; /* Large icons */
+        color: #3949ab; /* Blue icon color */
+        margin-right: 15px;
+    }
+    .contact-form {
+        flex: 2; /* Occupies more space than contact info */
+        min-width: 300px;
+    }
+
+    /* Map iframe styles */
+    iframe {
+        width: 100%; /* Full-width iframe */
+        height: 250px; /* Height of the map */
+        border: none; /* Removes border */
+        margin-top: 20px;
+    }
+
+    /* Submit button styles */
+    button[type="submit"] {
+        background-color: #007bff; /* Blue button background */
+        color: #fff; /* White text */
+        border: none; /* Removes border */
+        padding: 10px 20px; /* Adds padding around the button */
+        cursor: pointer; /* Changes cursor to pointer */
+        border-radius: 5px; /* Rounds button edges */
+    }
+    button[type="submit"]:hover {
+        background-color: #0056b3; /* Darker shade of blue on hover */
+    }
+
+    /* Responsive styles for smaller screens */
+    @media (max-width: 768px) {
+        .sidebar {
+            position: relative; /* Makes sidebar scrollable */
+            width: 100%; /* Full-width on smaller screens */
+            height: auto; /* Adjusts height automatically */
+        }
+        .main {
+            margin-left: 0; /* Removes margin for small screens */
+        }
+        .resume-section .column,
+        .contact-section {
+            flex-direction: column; /* Stacks content vertically */
+        }
+    }
